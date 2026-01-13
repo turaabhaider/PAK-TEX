@@ -2,56 +2,56 @@ import React from 'react';
 
 const FinalCall = () => {
   return (
-    <section className="w-full bg-white pt-24 pb-12 flex flex-col items-center">
-      {/* TOP SECTION: HEADING & 4 STEPS */}
-      <div className="w-full max-w-[1300px] px-8 mb-20">
-        <div className="text-center mb-16">
-          <p className="text-[#9A9A9A] text-[14px] font-black uppercase tracking-[0.3em] mb-4">Voor Serieuze Spelers</p>
-          <h2 className="text-black text-[56px] font-[900] leading-none tracking-tighter">
-            <span className="text-[#3B3DFF]">Ben Jij Dat?</span> Dan Hebben <br /> We Goed Nieuws.
-          </h2>
-        </div>
+    <section className="w-full py-24 bg-blue-50 flex justify-center px-6">
+      <div className="max-w-[1300px] w-full flex flex-col lg:flex-row gap-16 items-start border-0">
 
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="flex flex-col gap-4 lg:w-1/2">
-            {[
-              { id: "01.", text: "Gratis strategiesessie (na screening)" },
-              { id: "02.", text: "Een persoonlijke routekaart naar opvallende marketing" },
-              { id: "03.", text: "Eerlijk advies – ook als dat betekent dat we u naar een andere instantie moeten verwijzen" },
-              { id: "04.", text: "Geen verspilling van ingrediënten. We gebruiken alleen deeg dat kan rijzen." }
-            ].map((step) => (
-              <div key={step.id} className="bg-[#F8F9FF] rounded-3xl p-8 flex items-start gap-8 border border-transparent hover:border-[#3B3DFF]/20 transition-all group">
-                <span className="text-[#3B3DFF]/20 text-[32px] font-[900] group-hover:text-[#3B3DFF] transition-colors">{step.id}</span>
-                <p className="text-black font-bold text-[18px] leading-snug">{step.text}</p>
-              </div>
-            ))}
+        {/* LEFT SIDE: STEPS */}
+        <div className="lg:w-1/2 flex flex-col gap-4">
+          <div className="mb-8">
+            <p className="text-[#3B3DFF] font-bold uppercase tracking-widest text-sm mb-2">Voor Serieuze Spelers</p>
+            <h2 className="text-black text-[48px] font-[900] leading-tight">
+              <span className="text-[#3B3DFF]">Ben Jij Dat?</span> Dan Hebben <br /> We Goed Nieuws.
+            </h2>
           </div>
 
-          <div className="lg:w-1/2 relative">
-            <div className="rounded-[40px] overflow-hidden shadow-2xl">
-              <img src="/team-photo.jpg" alt="OMB Team" className="w-full h-[600px] object-cover" />
-              <div className="absolute bottom-10 left-10">
-                <button className="bg-[#3B3DFF] text-white px-8 py-4 rounded-full font-black flex items-center gap-4 hover:scale-105 transition-transform">
-                  <span className="text-xs uppercase tracking-widest">→ Start Het Vuur</span>
-                </button>
-              </div>
+          {[
+            { id: "01.", text: "Gratis strategiesessie (na screening)" },
+            { id: "02.", text: "Een persoonlijke routekaart naar opvallende marketing" },
+            { id: "03.", text: "Eerlijk advies – ook als dat betekent dat we u naar een andere instantie moeten verwijzen" },
+            { id: "04.", text: "Geen verspilling van ingrediënten. We gebruiken alleen deeg dat kan rijzen." }
+          ].map((item) => (
+            <div key={item.id} className="bg-[#F8F9FF] p-8 rounded-[24px] flex items-center gap-6 border border-transparent hover:border-[#3B3DFF]/10 transition-all">
+              <span className="text-[#3B3DFF]/20 text-3xl font-black">{item.id}</span>
+              <p className="font-bold text-gray-800 leading-tight">{item.text}</p>
             </div>
+          ))}
+        </div>
+
+        {/* RIGHT SIDE: THE FIXED CARD */}
+        <div className="lg:w-1/2 w-full flex justify-center lg:justify-end">
+          <div className="bg-white p-8 rounded-[50px] shadow-[0_40px_100px_rgba(0,0,0,0.08)] w-full max-w-[550px] flex flex-col">
+
+            <div className="flex items-center gap-2 mb-6">
+               <div className="w-2 h-2 bg-[#3B3DFF] rounded-full"></div>
+               <h3 className="text-black font-black text-xl uppercase tracking-tight">OMB Team</h3>
+            </div>
+
+            {/* FIXED IMAGE PATH */}
+            <div className="w-full aspect-[4/5] rounded-[40px] overflow-hidden mb-8 bg-gray-100">
+              <img 
+                src="/images/team-fixed.jpg" 
+                alt="OMB Team" 
+                className="w-full h-full object-cover" 
+                onError={(e) => { e.target.src = "https://via.placeholder.com/500x600?text=Check+Public+Folder"; }}
+              />
+            </div>
+
+            <button className="w-full bg-[#3B3DFF] text-white py-5 rounded-full font-black text-sm tracking-[0.2em] uppercase shadow-[0_20px_40px_rgba(59,61,255,0.25)]">
+              → START HET VUUR
+            </button>
           </div>
         </div>
-      </div>
 
-      {/* BOTTOM BLUE BANNER - FIXED MARGIN TO PREVENT OVERLAP */}
-      <div className="w-full max-w-[1300px] px-8 mb-0 relative z-20">
-        <div className="bg-[#3B3DFF] rounded-[48px] py-20 px-10 text-center relative overflow-hidden flex flex-col items-center">
-          <h2 className="text-white text-[56px] font-[900] leading-tight mb-10 relative z-10">
-            Online resultaten? <br />
-            Die komen bij ons voor de bakker.
-          </h2>
-          <button className="bg-white text-[#3B3DFF] px-10 py-5 rounded-full font-black flex items-center gap-4 hover:bg-opacity-90 transition-all relative z-10">
-             <span className="text-xs uppercase tracking-widest">→ Bel Ons Nu Snel</span>
-          </button>
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
-        </div>
       </div>
     </section>
   );

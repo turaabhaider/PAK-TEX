@@ -3,40 +3,44 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer 
-      className="w-full pt-20 flex flex-col items-center"
+      className="w-full pt-20 flex flex-col items-center relative z-10"
       style={{ background: 'linear-gradient(135deg, #050729 0%, #000000 100%)' }}
     >
-      {/* 1. DATA TABLE SECTION (The bridge from the main site) */}
+      {/* 1. TABLE SECTION (Top of Footer) */}
       <div className="w-full max-w-[1400px] px-8 md:px-16 mb-24 overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-white/10 text-white/40 text-[11px] font-black uppercase tracking-[0.2em]">
               <th className="py-6">City Name</th>
-              <th className="py-6">Event or Venue</th>
+              <th className="py-6">Event or Venue Name</th>
               <th className="py-6">Address</th>
-              <th className="py-6"></th> {/* Empty space */}
+              <th className="w-4"></th> {/* Empty space */}
               <th className="py-6">Phone Number</th>
-              <th className="py-6"></th> {/* Empty space */}
+              <th className="w-4"></th> {/* Empty space */}
               <th className="py-6">Website URL</th>
               <th className="py-6 text-[#3B3DFF]">Accommodation</th> {/* 8th Column */}
             </tr>
           </thead>
           <tbody className="text-white/80 text-[14px] font-bold">
-            <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-              <td className="py-5">Amsterdam</td>
-              <td className="py-5">The Loft</td>
-              <td className="py-5 text-white/40">A'DAM Tower, Overhoeksplein 1</td>
-              <td className="py-5"></td>
-              <td className="py-5 font-mono">0681843287</td>
-              <td className="py-5"></td>
-              <td className="py-5 underline decoration-[#3B3DFF] underline-offset-4 cursor-pointer">www.theloft.nl</td>
-              <td className="py-5 text-[#3B3DFF]">Hotel Suites</td>
+            <tr className="border-b border-white/5 hover:bg-white/5 transition-colors group">
+              <td className="py-6">Amsterdam</td>
+              <td className="py-6 text-white font-black">The Loft</td>
+              <td className="py-6">A'DAM Tower, Overhoeksplein 1</td>
+              <td></td>
+              <td className="py-6">0681843287</td> {/* No plus sign per instruction */}
+              <td></td>
+              <td className="py-6">
+                <a href="https://theloft.nl" target="_blank" rel="noreferrer" className="hover:text-[#3B3DFF] transition-colors">
+                  theloft.nl
+                </a>
+              </td>
+              <td className="py-6 text-[#3B3DFF]">Hotel Suites</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      {/* 2. WRAPPER FOR MAIN FOOTER CONTENT */}
+      {/* 2. MAIN FOOTER CONTENT (Branding & Links) */}
       <div className="w-full max-w-[1400px] px-8 md:px-16 flex flex-col md:flex-row justify-between pb-24 gap-16">
         
         {/* LEFT SECTION: BRANDING & SOCIALS */}
@@ -47,13 +51,20 @@ const Footer = () => {
           </p>
           <div className="flex gap-5">
             {['facebook', 'instagram', 'linkedin'].map((social) => (
-              <div key={social} className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#3B3DFF] hover:border-[#3B3DFF] cursor-pointer transition-all duration-500 group">
-                <div className="w-6 h-6 bg-white group-hover:scale-110 transition-transform" style={{ maskImage: `url(/${social}.svg)`, maskSize: 'contain', maskRepeat: 'no-repeat' }} />
+              <div
+                key={social}
+                className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#3B3DFF] hover:border-[#3B3DFF] cursor-pointer transition-all duration-500 group"
+              >
+                <div
+                  className="w-6 h-6 bg-white group-hover:scale-110 transition-transform"
+                  style={{
+                    maskImage: `url(/${social}.svg)`,
+                    maskSize: 'contain',
+                    maskRepeat: 'no-repeat'
+                  }}
+                />
               </div>
             ))}
-          </div>
-          <div className="mt-4">
-            <img src="/leadinfo-badge.png" alt="Leadinfo Certified Partner" className="h-16 w-auto grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500" />
           </div>
         </div>
 
@@ -63,50 +74,52 @@ const Footer = () => {
           <ul className="flex flex-col gap-5 text-white/40 font-bold text-[16px]">
             <li className="hover:text-white transition-colors cursor-pointer">Home</li>
             <li className="hover:text-white transition-colors cursor-pointer">Over Ons</li>
-            <li className="hover:text-white transition-colors cursor-pointer">Linkbuilding Uitbesteden</li>
-            <li className="hover:text-white transition-colors cursor-pointer">SEO-Copywriter</li>
             <li className="hover:text-white transition-colors cursor-pointer">Contact</li>
-            <li className="hover:text-white transition-colors cursor-pointer text-sm leading-tight">Online Marketing Agency Roermond</li>
-            <li className="hover:text-white transition-colors cursor-pointer">Veelgestelde Vragen</li>
           </ul>
         </div>
 
-        {/* RIGHT SECTION: BLUE CONTACT CARD */}
+        {/* RIGHT SECTION: THE BLUE BLOCK (CONTACT CARD) */}
         <div className="md:w-[440px] bg-[#3B3DFF] rounded-[40px] p-12 flex flex-col gap-10 text-white relative shadow-2xl overflow-hidden group">
           <div className="text-[48px] font-[900] leading-none select-none">*</div>
+
           <div>
-            <p className="text-[11px] font-[900] uppercase tracking-[0.25em] mb-8 opacity-70">Neem Contact Op</p>
+            <p className="text-[11px] font-[900] uppercase tracking-[0.25em] mb-8 opacity-70">
+              Neem Contact Op
+            </p>
+
             <div className="flex flex-col gap-8">
-              <a href="mailto:hello@onlinemarketingbakery.nl" className="flex justify-between items-center border-b border-white/20 pb-5 group/link">
+              <a
+                href="mailto:hello@onlinemarketingbakery.nl"
+                className="flex justify-between items-center border-b border-white/20 pb-5 group/link"
+              >
                 <span className="font-bold text-[16px]">hello@onlinemarketingbakery.nl</span>
                 <span className="group-hover/link:translate-x-2 transition-transform duration-300">→</span>
               </a>
-              <div className="flex justify-between items-center border-b border-white/20 pb-5 group/link cursor-pointer">
-                <span className="font-bold text-[16px]">Noordhoven 17 6042 NW Roermond</span>
-                <span className="group-hover/link:translate-x-2 transition-transform duration-300">→</span>
-              </div>
-              <a href="tel:0681843287" className="flex justify-between items-center border-b border-white/20 pb-5 group/link">
+
+              <a
+                href="tel:0681843287"
+                className="flex justify-between items-center border-b border-white/20 pb-5 group/link"
+              >
                 <span className="font-bold text-[16px]">0681843287</span>
                 <span className="group-hover/link:translate-x-2 transition-transform duration-300">→</span>
               </a>
             </div>
           </div>
+
           <div className="mt-4 flex flex-col gap-1">
             <p className="text-[10px] font-black uppercase opacity-60 tracking-widest">BTW-Nummer</p>
             <p className="text-sm font-bold">NL003276206B85</p>
           </div>
-          {/* Subtle inner glow for the blue card */}
+
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 blur-[60px] rounded-full translate-x-10 -translate-y-10" />
         </div>
       </div>
-      
+
       {/* 3. BOTTOM BAR */}
       <div className="w-full border-t border-white/5 py-10 flex justify-center">
-        <div className="w-full max-w-[1400px] px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white/20 text-[11px] font-black uppercase tracking-[0.2em]">
-            © Copyright 2026, Omb Alle rechten voorbehouden
-          </p>
-          <div className="flex gap-10 text-white/20 text-[11px] font-black uppercase tracking-[0.2em]">
+        <div className="w-full max-w-[1400px] px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-white/20 text-[11px] font-black uppercase tracking-[0.2em]">
+          <p>© Copyright 2026, Omb Alle rechten voorbehouden</p>
+          <div className="flex gap-10">
             <span className="hover:text-white cursor-pointer transition-colors">Servicetermijn</span>
             <span className="hover:text-white cursor-pointer transition-colors">Privacybeleid</span>
           </div>

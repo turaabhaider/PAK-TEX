@@ -16,12 +16,14 @@ const Navbar = () => {
       <div className="hidden md:flex items-center gap-8">
         {['Home', 'Over ons', 'Our Services', 'Working at OMB', 'Blog'].map(item => (
           <a
-            key={item}
-            href="#"
-            className="text-white/90 text-[14px] font-semibold hover:text-white transition"
-          >
-            {item}
-          </a>
+  key={item}
+  href="#"
+  className="text-white/90 text-[14px] font-normal
+  hover:text-white transition-colors"
+>
+  {item}
+</a>
+
         ))}
       </div>
 
