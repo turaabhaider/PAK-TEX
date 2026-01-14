@@ -1,96 +1,158 @@
 import React from 'react';
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, ArrowRight, Asterisk, ChefHat } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer 
-      className="w-full pt-20 flex flex-col items-center relative z-10"
-      style={{ background: 'linear-gradient(135deg, #050729 0%, #000000 100%)' }}
-    >
-      {/* 1. TABLE SECTION */}
-      <div className="w-full max-w-[1400px] px-8 md:px-16 mb-24 overflow-x-auto">
-        <table className="w-full text-left border-collapse">
-          <thead>
-            <tr className="border-b border-white/10 text-white/40 text-[11px] font-black uppercase tracking-[0.2em]">
-              <th className="py-6">City Name</th>
-              <th className="py-6">Event or Venue Name</th>
-              <th className="py-6">Address</th>
-              <th className="w-4"></th> 
-              <th className="py-6">Phone Number</th>
-              <th className="w-4"></th>
-              <th className="py-6">Website URL</th>
-              <th className="py-6 text-[#3B3DFF]">Accommodation</th>
-            </tr>
-          </thead>
-          <tbody className="text-white/80 text-[14px] font-bold">
-            <tr className="border-b border-white/5 hover:bg-white/5 transition-colors group">
-              <td className="py-6">Amsterdam</td>
-              <td className="py-6 text-white font-black">The Loft</td>
-              <td className="py-6">A'DAM Tower, Overhoeksplein 1</td>
-              <td></td>
-              <td className="py-6">0681843287</td>
-              <td></td>
-              <td className="py-6">
-                <a href="https://theloft.nl" target="_blank" rel="noreferrer" className="hover:text-[#3B3DFF] transition-colors">
-                  theloft.nl
-                </a>
-              </td>
-              <td className="py-6 text-[#3B3DFF]">Hotel Suites</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <footer className="w-full bg-[#030014] text-white relative overflow-hidden font-sans">
+      {/* Background Gradient Blob (Subtle, to match the dark aesthetic) */}
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[60%] bg-blue-900/10 blur-[150px] rounded-full pointer-events-none" />
 
-      {/* 2. MAIN FOOTER CONTENT */}
-      <div className="w-full max-w-[1400px] px-8 md:px-16 flex flex-col md:flex-row justify-between pb-24 gap-16">
+      {/* Main Container - Using Grid for exact gap control */}
+      <div className="max-w-[1440px] mx-auto px-6 py-20 relative z-10">
         
-        {/* LEFT SECTION: BRANDING */}
-        <div className="flex flex-col gap-10 md:w-1/2">
-          <div className="text-white text-[56px] font-[900] italic leading-none tracking-tighter">ömb</div>
-          <p className="text-white/50 text-[18px] leading-relaxed max-w-[340px] font-medium">
-           The modern operating system for club sports teams. Broadcast, manage, and win.
-          </p>
-          <div className="flex gap-5">
-            {['facebook', 'instagram', 'linkedin'].map((social) => (
-              <div
-                key={social}
-                className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#3B3DFF] hover:border-[#3B3DFF] cursor-pointer transition-all duration-500 group"
-              >
-                <div
-                  className="w-6 h-6 bg-white group-hover:scale-110 transition-transform"
-                  style={{
-                    maskImage: `url(/${social}.svg)`,
-                    maskSize: 'contain',
-                    maskRepeat: 'no-repeat'
-                  }}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-12">
+          
+          {/* LEFT COLUMN: Brand (Span 4 of 12) */}
+          <div className="lg:col-span-4 flex flex-col pr-8">
+            <div className="flex items-center gap-2 mb-6">
+              <ChefHat className="w-10 h-10 text-white mb-1" strokeWidth={1.5} />
+              <h2 className="text-4xl font-bold tracking-tight">ZimSports</h2>
+            </div>
+
+            <p className="text-gray-300 mb-8 leading-relaxed text-base max-w-sm">
+              The modern operating system for club sports teams. Broadcast, manage, and win.
+            </p>
+
+            <div className="flex gap-4 mb-12">
+              <SocialIcon icon={<Facebook size={20} />} />
+              <SocialIcon icon={<Instagram size={20} />} />
+              <SocialIcon icon={<Linkedin size={20} />} />
+            </div>
+
+            <div className="mt-auto">
+              <div className="bg-white text-black w-fit rounded-md overflow-hidden mb-6 shadow-lg">
+                <div className="flex items-center gap-2 p-2 px-3">
+                  <div className="bg-[#ff4d29] rounded p-1">
+                     <span className="font-bold text-white text-[10px] leading-none block">L</span>
+                  </div>
+                  <span className="font-bold text-gray-900 text-sm">Leadinfo</span>
+                </div>
+                <div className="bg-[#ff4d29] text-white text-[10px] font-bold px-3 py-1 text-center uppercase tracking-wide">
+                  Certified Partner
+                </div>
+              </div>
+
+              <p className="text-sm text-gray-400">
+                © 2026 Zim Sports. All rights reserved.
+              </p>
+            </div>
+          </div>
+
+          {/* MIDDLE COLUMN: Snelle Links (Span 3 of 12) */}
+          {/* This specific span creates the spacing. It takes 3 cols, but content is slim. */}
+          <div className="lg:col-span-3 pt-2 pl-2">
+            <h3 className="text-2xl font-bold mb-8">Snelle Links</h3>
+            <ul className="space-y-4 text-gray-300 font-medium">
+              <FooterLink text="Product" />
+              <FooterLink text="Features" />
+              <FooterLink text="Sports" />
+              <FooterLink text="How It Works" />
+              <FooterLink text="Company" />
+              <FooterLink text="About Zim" />
+              <FooterLink text="Support" />
+              <FooterLink text="Contact" />
+              <FooterLink text="Legal" />
+              <FooterLink text="Privacy Policy" />
+              <FooterLink text="Terms of Service" />
+            </ul>
+          </div>
+
+          {/* SPACER COLUMN (Span 1 of 12) - Explicit Gap Control */}
+          <div className="hidden lg:block lg:col-span-1"></div>
+
+          {/* RIGHT COLUMN: The Blue Phone (Span 4 of 12) */}
+          <div className="lg:col-span-4 flex justify-end">
+            {/* The Phone Container */}
+            <div className="bg-[#2d4eff] w-full max-w-[380px] rounded-[40px] px-8 pt-10 pb-12 relative shadow-2xl overflow-hidden flex flex-col h-full">
+              
+              {/* --- PHONE NOTCH (The 'Rising' Detail) --- */}
+              <div className="absolute top-5 left-1/2 -translate-x-1/2 flex items-center gap-3">
+                 {/* Speaker slit */}
+                 <div className="w-16 h-1.5 bg-blue-900/20 rounded-full"></div>
+                 {/* Camera dot */}
+                 <div className="w-1.5 h-1.5 bg-blue-900/20 rounded-full"></div>
+              </div>
+
+              {/* Icon */}
+              <div className="mt-4 mb-8">
+                <Asterisk className="w-14 h-14 text-white" strokeWidth={3} />
+              </div>
+
+              <h3 className="text-xl font-bold mb-8">Neem Contact Op</h3>
+
+              {/* Contact Items */}
+              <div className="space-y-0">
+                <ContactItem 
+                  icon={<Mail size={20} />} 
+                  text="hello@onlinemarketingbakery.nl" 
+                />
+                <ContactItem 
+                  icon={<MapPin size={20} />} 
+                  text="Noordhoven 176042 NW Roermond" 
+                />
+                {/* Phone Number - No Plus Sign as requested */}
+                <ContactItem 
+                  icon={<Phone size={20} />} 
+                  text="0681843267" 
                 />
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* RIGHT SECTION: QUICK LINKS */}
-        <div className="flex flex-col gap-10 md:w-1/4">
-          <h4 className="text-white text-[24px] font-[900] tracking-tight">Company</h4>
-          <ul className="flex flex-col gap-5 text-white/40 font-bold text-[16px]">
-            <li className="hover:text-white transition-colors cursor-pointer">About Zim</li>
-            <li className="hover:text-white transition-colors cursor-pointer">Support</li>
-            <li className="hover:text-white transition-colors cursor-pointer">Contact</li>
-          </ul>
-        </div>
-      </div>
+              {/* BTW Number */}
+              <div className="mt-10 mb-auto">
+                <p className="font-bold text-xs opacity-70 uppercase tracking-wider mb-1">BTW-Nummer:</p>
+                <p className="font-semibold text-lg tracking-wide">NL003276206B85</p>
+              </div>
 
-      {/* 3. BOTTOM BAR */}
-      <div className="w-full border-t border-white/5 py-10 flex justify-center">
-        <div className="w-full max-w-[1400px] px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-white/20 text-[11px] font-black uppercase tracking-[0.2em]">
-          <p>© 2026 Zim Sports. All rights reserved.</p>
-          <div className="flex gap-10">
-            <span className="hover:text-white cursor-pointer transition-colors">Servicetermijn</span>
-            <span className="hover:text-white cursor-pointer transition-colors">Privacybeleid</span>
+              {/* Bottom Links */}
+              <div className="flex gap-6 text-xs font-medium text-blue-100/70 mt-12">
+                <a href="#" className="hover:text-white transition-colors">Servicetermijn</a>
+                <a href="#" className="hover:text-white transition-colors">Privacybeleid</a>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </footer>
   );
 };
+
+// --- Sub-components for cleaner code ---
+
+const SocialIcon = ({ icon }) => (
+  <a href="#" className="w-10 h-10 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-blue-900 transition-all duration-300">
+    {icon}
+  </a>
+);
+
+const FooterLink = ({ text }) => (
+  <li>
+    <a href="#" className="hover:text-white hover:translate-x-1 transition-all duration-200 block">
+      {text}
+    </a>
+  </li>
+);
+
+const ContactItem = ({ icon, text }) => (
+  <div className="group flex items-center justify-between border-b border-white/20 py-5 cursor-pointer first:pt-0">
+    <div className="flex items-center gap-4 overflow-hidden">
+      <div className="border border-white/30 rounded-full p-2 flex-shrink-0">
+        {icon}
+      </div>
+      <span className="text-[15px] font-medium truncate">{text}</span>
+    </div>
+    <ArrowRight className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-white" />
+  </div>
+);
 
 export default Footer;
