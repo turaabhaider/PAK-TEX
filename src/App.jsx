@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials';
 import About from './components/About'; 
 import Contact from './components/Contact'; 
 import FinalCall from './components/FinalCall'; 
+import PreFooterCTA from './components/PreFooterCTA';
 import Footer from './components/Footer'; 
 
 const App = () => {
@@ -32,11 +33,14 @@ const App = () => {
       <Testimonials />
       <About />
       <Contact />
-     < Ticker />
+      <Ticker />
       <FinalCall />
+      
+      {/* This places the Blue Box on the white background above the footer */}
+      
+      <PreFooterCTA />
       <Footer />
     </main>
-    
   );
 };
 

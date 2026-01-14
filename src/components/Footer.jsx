@@ -6,7 +6,7 @@ const Footer = () => {
       className="w-full pt-20 flex flex-col items-center relative z-10"
       style={{ background: 'linear-gradient(135deg, #050729 0%, #000000 100%)' }}
     >
-      {/* 1. TABLE SECTION (Top of Footer) */}
+      {/* 1. TABLE SECTION */}
       <div className="w-full max-w-[1400px] px-8 md:px-16 mb-24 overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
@@ -14,11 +14,11 @@ const Footer = () => {
               <th className="py-6">City Name</th>
               <th className="py-6">Event or Venue Name</th>
               <th className="py-6">Address</th>
-              <th className="w-4"></th> {/* Empty space */}
+              <th className="w-4"></th> 
               <th className="py-6">Phone Number</th>
-              <th className="w-4"></th> {/* Empty space */}
+              <th className="w-4"></th>
               <th className="py-6">Website URL</th>
-              <th className="py-6 text-[#3B3DFF]">Accommodation</th> {/* 8th Column */}
+              <th className="py-6 text-[#3B3DFF]">Accommodation</th>
             </tr>
           </thead>
           <tbody className="text-white/80 text-[14px] font-bold">
@@ -27,7 +27,7 @@ const Footer = () => {
               <td className="py-6 text-white font-black">The Loft</td>
               <td className="py-6">A'DAM Tower, Overhoeksplein 1</td>
               <td></td>
-              <td className="py-6">0681843287</td> {/* No plus sign per instruction */}
+              <td className="py-6">0681843287</td>
               <td></td>
               <td className="py-6">
                 <a href="https://theloft.nl" target="_blank" rel="noreferrer" className="hover:text-[#3B3DFF] transition-colors">
@@ -40,11 +40,11 @@ const Footer = () => {
         </table>
       </div>
 
-      {/* 2. MAIN FOOTER CONTENT (Branding & Links) */}
+      {/* 2. MAIN FOOTER CONTENT */}
       <div className="w-full max-w-[1400px] px-8 md:px-16 flex flex-col md:flex-row justify-between pb-24 gap-16">
         
-        {/* LEFT SECTION: BRANDING & SOCIALS */}
-        <div className="flex flex-col gap-10 md:w-1/3">
+        {/* LEFT SECTION: BRANDING */}
+        <div className="flex flex-col gap-10 md:w-1/2">
           <div className="text-white text-[56px] font-[900] italic leading-none tracking-tighter">ömb</div>
           <p className="text-white/50 text-[18px] leading-relaxed max-w-[340px] font-medium">
             Creatieve oplossingen. Strategische groei. Echte resultaten. Laten we uw merk naar een hoger niveau tillen.
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* MIDDLE SECTION: QUICK LINKS */}
+        {/* RIGHT SECTION: QUICK LINKS */}
         <div className="flex flex-col gap-10 md:w-1/4">
           <h4 className="text-white text-[24px] font-[900] tracking-tight">Snelle Links</h4>
           <ul className="flex flex-col gap-5 text-white/40 font-bold text-[16px]">
@@ -76,42 +76,6 @@ const Footer = () => {
             <li className="hover:text-white transition-colors cursor-pointer">Over Ons</li>
             <li className="hover:text-white transition-colors cursor-pointer">Contact</li>
           </ul>
-        </div>
-
-        {/* RIGHT SECTION: THE BLUE BLOCK (CONTACT CARD) */}
-        <div className="md:w-[440px] bg-[#3B3DFF] rounded-[40px] p-12 flex flex-col gap-10 text-white relative shadow-2xl overflow-hidden group">
-          <div className="text-[48px] font-[900] leading-none select-none">*</div>
-
-          <div>
-            <p className="text-[11px] font-[900] uppercase tracking-[0.25em] mb-8 opacity-70">
-              Neem Contact Op
-            </p>
-
-            <div className="flex flex-col gap-8">
-              <a
-                href="mailto:hello@onlinemarketingbakery.nl"
-                className="flex justify-between items-center border-b border-white/20 pb-5 group/link"
-              >
-                <span className="font-bold text-[16px]">hello@onlinemarketingbakery.nl</span>
-                <span className="group-hover/link:translate-x-2 transition-transform duration-300">→</span>
-              </a>
-
-              <a
-                href="tel:0681843287"
-                className="flex justify-between items-center border-b border-white/20 pb-5 group/link"
-              >
-                <span className="font-bold text-[16px]">0681843287</span>
-                <span className="group-hover/link:translate-x-2 transition-transform duration-300">→</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-1">
-            <p className="text-[10px] font-black uppercase opacity-60 tracking-widest">BTW-Nummer</p>
-            <p className="text-sm font-bold">NL003276206B85</p>
-          </div>
-
-          <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 blur-[60px] rounded-full translate-x-10 -translate-y-10" />
         </div>
       </div>
 
