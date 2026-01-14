@@ -36,8 +36,8 @@ const Services = () => {
         <div className="text-center mb-16">
           <p className="text-[#9A9A9A] text-[14px] font-bold uppercase tracking-[0.3em] mb-4">Onze Diensten</p>
           <h2 className="text-black text-[48px] font-[900] leading-tight tracking-tighter">
-            Onze Diensten: <br />
-            <span className="text-[#3B3DFF]">Hoe We Het Flikken</span>
+            Built for  <br />
+            <span className="text-[#3B3DFF]">Every club sport</span>
           </h2>
         </div>
 
@@ -60,11 +60,11 @@ const Services = () => {
                   <span className="text-white">📅</span>
                </div>
                <h3 className="text-[24px] font-[900] leading-tight mb-4">
-                 Laten we samenwerken <br /> om samen uitstekende <br /> resultaten te behalen.
+                And many more...We're constantly adding support for new sports.
                </h3>
             </div>
             <button className="z-10 flex items-center gap-3 font-bold text-[14px] border-b border-white pb-1 group-hover:gap-5 transition-all">
-              Maak een afspraak <span>→</span>
+              EXPLORE MORE <span>→</span>
             </button>
             {/* Subtle glow effect */}
             <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 blur-[50px] rounded-full"></div>

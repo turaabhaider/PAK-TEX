@@ -16,13 +16,15 @@ const Contact = () => {
           </div>
           
           <h2 className="text-white text-[64px] font-[900] leading-[1.05] tracking-tight">
-            Het Deeg Moet <br /> Wel Rijzen
+            Ready to Lead Your Team
+            Like a Pro?
           </h2>
           
           <div className="flex flex-col gap-6 text-white/70 font-medium text-[18px] leading-relaxed max-w-[480px]">
-            <p>We voeren onze gratis merkanalyse (ter waarde van € 749) alleen uit voor bedrijven die we écht kunnen helpen.</p>
-            <p>Geen halfbakken ideeën of lauwe ambities – we selecteren zorgvuldig met wie we samenwerken.</p>
-            <p>Meld je aan voor een screening en als jouw bedrijf écht potentie heeft, zetten we de ovens aan. Want we bakken liever één perfecte taart dan tien middelmatige koekjes.</p>
+            <p>Join thousands of coaches using Zim to elevate their teams. It's free to start — and built to scale..</p>
+            <p>Geen halfbakken ideeën of lauwe ambities – Choose Your Role
+            Select how you'll be using Zim Sports</p>
+            <p> No credit card required • Free for coaches • 24/7 support</p>
           </div>
         </div>
 
@@ -30,7 +32,7 @@ const Contact = () => {
         <div className="lg:w-1/2 bg-white/5 backdrop-blur-md p-12 rounded-[40px] border border-white/10 relative z-10 shadow-2xl">
           <form className="flex flex-col gap-7">
             <div className="flex flex-col gap-3">
-              <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">Volledige naam</label>
+              <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">YOUR NAME</label>
               <input 
                 type="text" 
                 placeholder="Uw volledige naam" 
@@ -40,7 +42,7 @@ const Contact = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col gap-3">
-                <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">Telefoonnummer</label>
+                <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">PHONE NUMBER</label>
                 <input 
                   type="text" 
                   placeholder="Uw telefoonnummer" 
@@ -48,7 +50,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col gap-3">
-                <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">E-mailadres</label>
+                <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">E-MAIL ADDRESS</label>
                 <input 
                   type="email" 
                   placeholder="Voer uw e-mailadres in" 
@@ -58,7 +60,7 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col gap-3">
-              <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">Bericht</label>
+              <label className="text-white text-xs font-[900] uppercase tracking-[0.2em] opacity-60">REVIEW</label>
               <textarea 
                 placeholder="Vertel ons over uw project" 
                 rows="4" 

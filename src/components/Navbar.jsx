@@ -9,7 +9,8 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="text-white text-[26px] font-black tracking-tight">
-        ömb
+        
+       ZimSports
       </div>
 
       {/* Menu */}
@@ -29,7 +30,7 @@ const Navbar = () => {
 
       {/* Button */}
       <button className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-[13px] font-bold">
-        Get Started
+        Get Started Free
         <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center">
           →
         </span>

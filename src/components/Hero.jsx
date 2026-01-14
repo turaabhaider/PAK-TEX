@@ -43,17 +43,18 @@ const Hero = () => {
 
         {/* FIXED HEADLINE: One line, all white, no floating elements */}
         <h1 className="z-10 text-white text-center font-black tracking-tighter leading-none text-[65px] md:text-[85px] lg:text-[105px] w-full max-w-[1300px] whitespace-nowrap">
-          B2B Marketing Met Pit
+          
+          Stream Your Game.
         </h1>
 
         {/* Bottom Logo Strip */}
         <div className="absolute bottom-12 w-full px-24 flex justify-between items-center opacity-30 grayscale invert brightness-200">
-          <span className="font-black italic text-xl text-white">1 DIGITAL</span>
-          <span className="font-bold text-xl text-white">Nicebyte</span>
-          <span className="tracking-[0.25em] text-2xl text-white font-light">SW</span>
-          <span className="font-black text-xl text-white">DIR</span>
+          <span className="font-black italic text-xl text-white">Home</span>
+          <span className="font-bold text-xl text-white">Overons</span>
+          <span className="tracking-[0.25em] text-2xl text-white font-light">Ours Services</span>
+          <span className="font-black text-xl text-white">Working at OMB</span>
           <span className="border-2 border-white px-4 py-1 font-black text-white text-sm tracking-widest">
-            RB POWERSYSTEMS
+            Blog
           </span>
         </div>
       </div>

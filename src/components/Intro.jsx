@@ -16,19 +16,17 @@ const IntroText = () => {
             font-[500]
           "
         >
-          Het online landschap ligt vol met grijze muizen. 
+          Zim Sports is the all-in-one platform for club teams — live broadcast,
           <span className="text-black font-[900]">
-            {" "}Bedrijven die zeggen dat ze "kwalitatief" en "servicegericht" zijn.
+            {" "}manage, and elevate your game from anywhere.
           </span>{" "}
           <span className="text-[#3B3DFF] font-[900]">
-            Alsof dat onderscheidend is.
+            Trusted by club teams across water polo, volleyball, lacrosse, and more
           </span>{" "}
           <span className="text-black font-[900]">
-            Wij helpen je om te transformeren naar een merk dat mensen zich
+            From practice scheduling to championship broadcasts, Zim Sports covers every aspect of club sports management.
           </span>
-          <span className="text-black italic font-[900] block mt-1">
-            écht herinneren.
-          </span>
+          
         </p>
       </div>
 
@@ -37,8 +35,9 @@ const IntroText = () => {
         <h2 
           className="text-black font-[900] text-[64px] leading-[1.1] tracking-tight"
         >
-          Waarom Potentiële Klanten <br />
-          Jou Niet Zien <span className="text-[#3B3DFF]">(Nog)</span>
+          Everything your club needs
+          in one place.
+          
         </h2>
       </div>
 

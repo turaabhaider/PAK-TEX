@@ -14,11 +14,9 @@ const PreFooterCTA = () => {
 
         <div className="relative z-10">
           <h2 className="text-white text-[42px] md:text-[64px] font-[900] leading-tight mb-4 tracking-tight">
-            Online resultaten?
+            "Zim Sports transformed how we manage our water polo club. Parents love the live streams, and our coaches save hours every week."
           </h2>
-          <p className="text-white text-[24px] md:text-[36px] font-medium mb-12 opacity-90">
-            Die komen bij ons voor de bakker.
-          </p>
+          
 
           <button className="group bg-white text-[#3B3DFF] pl-2 pr-8 py-2 rounded-full font-bold text-lg flex items-center gap-4 hover:scale-105 transition-all duration-300 shadow-xl">
             {/* De ronde pijl knop uit de Figma screenshot */}
@@ -26,7 +24,7 @@ const PreFooterCTA = () => {
               →
             </div>
             <span className="uppercase tracking-wider text-sm font-black">
-              Bel Ons Nu Snel!
+              SEE MORE REVIEWS
             </span>
           </button>
         </div>

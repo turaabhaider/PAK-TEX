@@ -24,7 +24,7 @@ const Testimonials = () => {
     <section className="w-full py-24 bg-[#F8F9FF] flex justify-center px-6">
       <div className="max-w-[1300px] w-full">
         <h2 className="text-[42px] font-[900] text-center mb-16">
-          Wat Onze <span className="text-[#3B3DFF]">Partners</span> Zeggen
+         Loved by  <span className="text-[#3B3DFF]">coaches everywhere</span> 
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

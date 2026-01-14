@@ -10,7 +10,7 @@ const FinalCall = () => {
           <div className="mb-8">
             <p className="text-[#3B3DFF] font-bold uppercase tracking-widest text-sm mb-2">Voor Serieuze Spelers</p>
             <h2 className="text-black text-[48px] font-[900] leading-tight">
-              <span className="text-[#3B3DFF]">Ben Jij Dat?</span> Dan Hebben <br /> We Goed Nieuws.
+              Built for every club sport
             </h2>
           </div>
 
@@ -33,7 +33,7 @@ const FinalCall = () => {
 
             <div className="flex items-center gap-2 mb-6">
                <div className="w-2 h-2 bg-[#3B3DFF] rounded-full"></div>
-               <h3 className="text-black font-black text-xl uppercase tracking-tight">OMB Team</h3>
+               <h3 className="text-black font-black text-xl uppercase tracking-tight">OUR USERS REACTIONS</h3>
             </div>
 
             {/* FIXED IMAGE PATH */}
@@ -47,7 +47,7 @@ const FinalCall = () => {
             </div>
 
             <button className="w-full bg-[#3B3DFF] text-white py-5 rounded-full font-black text-sm tracking-[0.2em] uppercase shadow-[0_20px_40px_rgba(59,61,255,0.25)]">
-              → START HET VUUR
+              → EXPLORE MORE
             </button>
           </div>
         </div>

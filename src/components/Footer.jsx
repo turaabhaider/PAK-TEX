@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="flex flex-col gap-10 md:w-1/2">
           <div className="text-white text-[56px] font-[900] italic leading-none tracking-tighter">ömb</div>
           <p className="text-white/50 text-[18px] leading-relaxed max-w-[340px] font-medium">
-            Creatieve oplossingen. Strategische groei. Echte resultaten. Laten we uw merk naar een hoger niveau tillen.
+           The modern operating system for club sports teams. Broadcast, manage, and win.
           </p>
           <div className="flex gap-5">
             {['facebook', 'instagram', 'linkedin'].map((social) => (
@@ -70,10 +70,10 @@ const Footer = () => {
 
         {/* RIGHT SECTION: QUICK LINKS */}
         <div className="flex flex-col gap-10 md:w-1/4">
-          <h4 className="text-white text-[24px] font-[900] tracking-tight">Snelle Links</h4>
+          <h4 className="text-white text-[24px] font-[900] tracking-tight">Company</h4>
           <ul className="flex flex-col gap-5 text-white/40 font-bold text-[16px]">
-            <li className="hover:text-white transition-colors cursor-pointer">Home</li>
-            <li className="hover:text-white transition-colors cursor-pointer">Over Ons</li>
+            <li className="hover:text-white transition-colors cursor-pointer">About Zim</li>
+            <li className="hover:text-white transition-colors cursor-pointer">Support</li>
             <li className="hover:text-white transition-colors cursor-pointer">Contact</li>
           </ul>
         </div>
@@ -82,7 +82,7 @@ const Footer = () => {
       {/* 3. BOTTOM BAR */}
       <div className="w-full border-t border-white/5 py-10 flex justify-center">
         <div className="w-full max-w-[1400px] px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-white/20 text-[11px] font-black uppercase tracking-[0.2em]">
-          <p>© Copyright 2026, Omb Alle rechten voorbehouden</p>
+          <p>© 2026 Zim Sports. All rights reserved.</p>
           <div className="flex gap-10">
             <span className="hover:text-white cursor-pointer transition-colors">Servicetermijn</span>
             <span className="hover:text-white cursor-pointer transition-colors">Privacybeleid</span>
