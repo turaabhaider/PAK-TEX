@@ -6,12 +6,10 @@ const Results = () => {
 
       {/* Header */}
       <div className="text-center mb-16">
-        <p className="text-gray-400 font-bold uppercase tracking-widest text-[13px] mb-3">
-          Wij Zijn Geen Fans Van Luchtige Verhalen
-        </p>
+        
         <h2 className="text-black text-[48px] md:text-[56px] font-black leading-tight">
-          De Kers Op De Taart: <br />
-          <span className="text-[#3B3DFF]">Onze Resultaten</span>
+         
+          <span className="text-[#3B3DFF]">Our Achievements</span>
         </h2>
       </div>
 
@@ -41,8 +39,8 @@ const Results = () => {
 
         {/* Badge 1 */}
         <div className="absolute -left-20 top-1/2 -translate-y-1/2 bg-white p-6 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] z-20 min-w-[180px]">
-          <span className="text-black text-3xl font-black">47.5k</span>
-          <p className="text-gray-400 text-xs font-bold">Tevreden klanten</p>
+          <span className="text-black text-3xl font-black">10K+</span>
+          <p className="text-gray-400 text-xs font-bold">Teams Powered</p>
 
           <div className="flex -space-x-2 mt-3">
             {[1, 2, 3].map((i) => (
@@ -61,8 +59,8 @@ const Results = () => {
 
         {/* Badge 2 */}
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-14 bg-white px-10 py-6 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] z-20 text-center">
-          <p className="text-gray-500 font-bold text-sm">Daily Visitors</p>
-          <p className="text-[#33CBB1] font-black text-4xl">800+</p>
+          <p className="text-gray-500 font-bold text-sm">Games Streamed</p>
+          <p className="text-[#33CBB1] font-black text-4xl">500K+</p>
         </div>
 
         {/* Badge 3 */}
@@ -71,7 +69,7 @@ const Results = () => {
             <span className="text-white text-xs">“</span>
           </div>
           <p className="text-gray-600 text-[13px] font-bold mb-4 leading-relaxed">
-            Bedankt, OMB, voor je toewijding, professionaliteit en uitstekende service, ik ben zo blij
+            Trusted by club teams across water polo, volleyball, lacrosse, and more
           </p>
           <img
             src="/images/member-1.jpg"
@@ -86,20 +84,20 @@ const Results = () => {
       <div className="max-w-[1200px] w-full grid grid-cols-1 md:grid-cols-4 gap-8 mt-20">
         {[
           {
-            val: "35–60%",
-            desc: "Conversiepercentages stijgen met 35–60% na onze website-optimalisaties",
+            val: "2M+",
+            desc: "Athletes are Connected to this application.That is the reason people loves to watch their favourite sports here.",
           },
           {
-            val: "43% Meer",
-            desc: "Gemiddeld 43% meer organisch verkeer binnen 6 maanden",
+            val: "43% ",
+            desc: "Loves to watch their favourite sports on this application",
           },
           {
-            val: "3X Langer",
-            desc: "Content wordt 3x langer bekeken dan die van onze concurrenten",
+            val: "99.9%",
+            desc: "Uptime,You can watch any sports any time.",
           },
           {
-            val: "4X Hoger",
-            desc: "Leadgeneratie op LinkedIn met 4x hogere respons dan het branchegemiddelde",
+            val: "ALL-IN-ONE",
+            desc: "You can watch and also connect to athletes at the same time",
           },
         ].map((stat, i) => (
           <div key={i} className="flex flex-col gap-4 text-center md:text-left px-4">

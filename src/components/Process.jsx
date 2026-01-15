@@ -6,23 +6,23 @@ const Process = () => {
   const steps = [
     {
       id: 1,
-      title: "1. We Zoeken Waar Het Schuurt",
-      description: "Geen slappe analyse, maar een keiharde confrontatie met de werkelijkheid. We ontleden jouw markt én die van je concurrenten. Waar laat jij kansen liggen?"
+      title: "1. Comprehensive Team Management Tools",
+      description: "Zim Sports provides coaches and administrators with tools to organize teams, manage rosters, plan practice sessions, and track player progress. It simplifies scheduling, payments, and communication so teams stay organized and focused on performance."
     },
     { 
       id: 2, 
-      title: "2. We creëren een merk met een mening",
-      description: "We bouwen een identiteit die niet bang is om op te vallen. Geen dertien-in-een-dozijn design, maar een krachtige boodschap die blijft hangen bij je doelgroep."
+      title: "2. Advanced Analytics and Video Support",
+      description: "The platform offers performance analytics and video analysis tools that help teams break down game footage and stats. Coaches can generate customizable reports and drill deeper into player and game performance."
     },
     { 
       id: 3, 
-      title: "3. We stoken onrust op alle fronten",
-      description: "Tijd om de markt wakker te schudden. We zetten de juiste kanalen in om jouw nieuwe merk met een knal te lanceren en de concurrentie zenuwachtig te maken."
+      title: "3. Live Tracking and Fan Engagement",
+      description: "Families and fans can follow live updates, scoreboards, and notifications through Zim Sports, keeping the community connected to every game moment. The platform also supports integrated messaging and event reminders."
     },
     { 
       id: 4, 
-      title: "4. Gaspedaal intrappen",
-      description: "Optimaliseren, opschalen en domineren. We laten het niet bij één succesje, maar blijven gas geven om jouw online resultaten structureel te verbeteren."
+      title: "4. Easy Onboarding and Accessibility",
+      description: "Zim Sports can be accessed via app on multiple platforms, with a simple sign‑up process and free current access for users. Its intuitive interface makes getting started straightforward for coaches, players, and supporters alike."
     }
   ];
 
@@ -30,10 +30,9 @@ const Process = () => {
     <section className="w-full py-24 bg-white flex flex-col items-center px-6">
       <div className="max-w-[1300px] w-full">
         <div className="text-center mb-20">
-          <p className="text-[#9A9A9A] text-[14px] font-bold uppercase tracking-[0.3em] mb-4">Ontdek Je Meest Gedurfde Zelf</p>
+          
           <h2 className="text-black text-[48px] font-[900] leading-tight tracking-tighter">
-            Van Grijze Muis Naar <br />
-            Onruststoker In <span className="text-[#3B3DFF]">4 Stappen</span>
+             <span className="text-[#3B3DFF]">More About Us</span>
           </h2>
         </div>
 

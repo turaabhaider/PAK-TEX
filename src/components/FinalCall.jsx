@@ -15,10 +15,10 @@ const FinalCall = () => {
           </div>
 
           {[
-            { id: "01.", text: "Gratis strategiesessie (na screening)" },
-            { id: "02.", text: "Een persoonlijke routekaart naar opvallende marketing" },
-            { id: "03.", text: "Eerlijk advies – ook als dat betekent dat we u naar een andere instantie moeten verwijzen" },
-            { id: "04.", text: "Geen verspilling van ingrediënten. We gebruiken alleen deeg dat kan rijzen." }
+            { id: "01.", text: "Connecting players, coaches, and fans." },
+            { id: "02.", text: "Streamline schedules, scores, and stats," },
+            { id: "03.", text: "Where teamwork meets technology." },
+            { id: "04.", text: "All in one place, built for teams." }
           ].map((item) => (
             <div key={item.id} className="bg-[#F8F9FF] p-8 rounded-[24px] flex items-center gap-6 border border-transparent hover:border-[#3B3DFF]/10 transition-all">
               <span className="text-[#3B3DFF]/20 text-3xl font-black">{item.id}</span>
@@ -46,9 +46,7 @@ const FinalCall = () => {
               />
             </div>
 
-            <button className="w-full bg-[#3B3DFF] text-white py-5 rounded-full font-black text-sm tracking-[0.2em] uppercase shadow-[0_20px_40px_rgba(59,61,255,0.25)]">
-              → EXPLORE MORE
-            </button>
+            
           </div>
         </div>
 

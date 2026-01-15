@@ -4,19 +4,19 @@ const Testimonials = () => {
   // Use strings for the paths since they are in the public folder
   const reviews = [
     { 
-      name: "Haris Hodzic", 
+      name: "Coach Sarah M.", 
       img: "/images/avatar-1.jpg", 
-      text: "Geweldige resultaten! De Bakery heeft onze online aanwezigheid volledig getransformeerd." 
+      text: "Zim Sports transformed how we manage our water polo club. Parents love the live streams, and our coaches save hours every week." 
     },
     { 
-      name: "Emiley Rodriguez", 
+      name: "Mike T.", 
       img: "/images/avatar-2.jpg", 
-      text: "Heel fijn team om mee te werken. Ze begrijpen B2B marketing echt tot in de puntjes." 
+      text: "The broadcasting quality is incredible. We've had scouts from colleges tune in to watch our players. Game changer for recruitment."
     },
     { 
-      name: "Vincent De Gendt", 
+      name: "Jennifer L.", 
       img: "/images/avatar-3.jpg", 
-      text: "De pit die we zochten. Onze leads zijn met 40% gestegen sinds de samenwerking." 
+      text: "Finally, a platform that understands club sports. Simple to use, powerful features, and the support team is amazing." 
     }
   ];
 

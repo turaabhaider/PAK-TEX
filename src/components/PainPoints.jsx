@@ -3,24 +3,24 @@ import React from 'react';
 const PainPoints = () => {
   const points = [
     {
-      title: "Onzichtbaar Online",
+      title: "Stream Every Moment",
       desc: "Je bent expert in je vakgebied, maar online val je nauwelijks op. Je website is een visitekaartje waar niemand op kijkt, in plaats van een machine die klanten trekt.",
       blueIcon: true
     },
     {
-      title: "Marketing zonder Resultaat",
-      desc: "Je investeert tijd en geld in advertenties of content, maar de resultaten blijven uit. Geen leads, geen groei, alleen maar kosten.",
-      blueIcon: false
+      title: "Simplify Coaching",
+      desc: "Schedules, rosters, messaging, and stats — all in one place. Zim makes coaching effortless",
+      blueIcon: true
     },
     {
-      title: "Concurrentie Overtreft Jou",
-      desc: "Je ziet concurrenten die minder goed zijn in hun vak wel de grote projecten binnenhalen, simpelweg omdat hun online marketing 'harder schreeuwt'.",
-      blueIcon: false
+      title: "Train Smarter",
+      desc: "Instant cloud storage for every game. Review plays, build highlights, and coach with precision.",
+      blueIcon: true
     },
     {
-      title: "Ongeziene Kwaliteit",
-      desc: "Je weet dat je beter bent dan de rest, maar als potentiële klanten je online opzoeken, straalt dat er niet direct vanaf. Je merk verdient meer pit.",
-      blueIcon: false
+      title: "Watch Live Matches",
+      desc: "Experience the thrill of live sports. Watch your favorite teams compete in real-time.You can easily watch matches with best graphics and resolution ",
+      blueIcon: true
     }
   ];
 

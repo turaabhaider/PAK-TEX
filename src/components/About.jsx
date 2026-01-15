@@ -12,13 +12,7 @@ const About = () => {
             alt="Rubin Koot - Founder" 
             className="w-full h-full object-cover" 
           />
-          {/* Floating Button on Image */}
-          <button className="absolute bottom-10 left-10 bg-white text-black font-black py-4 px-8 rounded-full flex items-center gap-3 shadow-lg hover:scale-105 transition-transform">
-            <div className="w-6 h-6 bg-[#3B3DFF] rounded-full flex items-center justify-center">
-              <span className="text-white text-xs">→</span>
-            </div>
-            Leer Ons Kennen
-          </button>
+          
         </div>
 
         {/* Right Side: Content matched to Figma */}
@@ -28,24 +22,18 @@ const About = () => {
           </div>
           
           <h2 className="text-[52px] md:text-[64px] font-[900] leading-none tracking-tight">
-            Meet The <span className="text-[#3B3DFF]">Bakery</span>
+            Stream Your  <span className="text-[#3B3DFF]"> Game.</span>
           </h2>
           
           <div className="space-y-6 text-gray-700 text-lg font-bold leading-relaxed max-w-[500px]">
             <p>
-              In 2020 trapte Rubin Koot tegen de heilige huisjes van online marketing. 
-              Van brave SEO-nerd naar chef onruststoking – omdat de wereld niet nóg een 
-              bureau nodig heeft dat "ook websites maakt én sociale media doet".
+              ZimSports.com is a comprehensive sports management and engagement platform designed to help coaches, teams, families, and fans stay organized and connected with their sports communities. While it isn’t a traditional mass‑market streaming site like DAZN or sports broadcasters, it provides tools for live game updates, score tracking, and video features that let users follow and share key moments of matches and training sessions in real time.
+          
             </p>
             <p>
-              We begonnen zonder businessplan, maar wel met een duidelijke visie: 
-              marketing die wérkt. Learn by doing. Elk recept dat we voor klanten bakken, 
-              hebben we eerst in eigen keuken getest.
+              For teams and coaches, Zim Sports simplifies game day by offering video analysis tools, performance tracking, and communication features. You can upload game footage, review clips with your players, and use those insights to improve team performance — a useful way to stream game content internally for training and review purposes
             </p>
-            <p className="text-gray-500 font-medium italic">
-              Inmiddels staan er 6 vakfanaten aan de ovens – allergisch voor middelmatigheid 
-              en PowerPoint-marketing.
-            </p>
+            
           </div>
         </div>
 

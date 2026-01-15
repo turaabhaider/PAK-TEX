@@ -3,30 +3,31 @@ import React from 'react';
 const Services = () => {
   const serviceList = [
     {
-      title: "Winstgevende websites",
-      desc: "Wij creëren digitale platformen op maat: geen sjablonen, alleen uitstekende ervaringen op WordPress, Shopify, Webflow of Laravel.",
-      icon: "🌐"
+      title: "Water Polo",
+      desc: "Track quarters, ejections, and pool-side stats with water-resistant streaming.",
+      icon: "🤽"
     },
     {
-      title: "Contentmarketing",
-      desc: "Content die wordt gevonden, gelezen en onthouden: strategische blogs, video's en meer om uw expertise te laten zien en leads te genereren.",
-      icon: "⌘"
+      title: "Volleyballg",
+      desc: "Set-by-set scoring, rotation tracking, and rally analysis tools.",
+      icon: "🏐"
     },
     {
-      title: "Copywriting",
-      desc: "Uw expertise, onze woorden: heldere, overtuigende content voor websites tot e-mails, opgesteld met de juiste toon en een blijvende impact.",
-      icon: "📄"
+      title: "Lacrosse",
+      desc: "Face-off tracking, man-up situations, and attack zone heat maps.",
+      icon: "🥍"
     },
     {
-      title: "SEO",
-      desc: "Hoge Google-rankings zijn geen kwestie van geluk, maar van strategie. We combineren techniek, content en autoriteit om echte resultaten te behalen.",
-      icon: "🔍"
+      title: "Field Hockey",
+      desc: "Penalty corner stats, possession time, and player movement tracking..",
+      icon: "🏑"
     },
     {
-      title: "Social Media",
-      desc: "Maak social echt social. We ontwikkelen strategie, content en community om echte connecties te creëren, leads te genereren en je merk te laten groeien.",
-      icon: "📱"
+      title: "Rugby",
+      desc: "Scrum analytics, try scoring patterns, and tackle success rates.",
+      icon: "🏉"
     }
+    
   ];
 
   return (
@@ -63,9 +64,7 @@ const Services = () => {
                 And many more...We're constantly adding support for new sports.
                </h3>
             </div>
-            <button className="z-10 flex items-center gap-3 font-bold text-[14px] border-b border-white pb-1 group-hover:gap-5 transition-all">
-              EXPLORE MORE <span>→</span>
-            </button>
+           
             {/* Subtle glow effect */}
             <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 blur-[50px] rounded-full"></div>
           </div>
